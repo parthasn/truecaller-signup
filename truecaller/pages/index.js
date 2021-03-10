@@ -14,8 +14,8 @@ export default function Home() {
 		<div className={styles.container}>
 			<h1>Facebook Login</h1>
 			<FacebookLogin
-				appId="1088597931155576"
-				autoLoad={true}
+				appId="710703452946759"
+				autoLoad={false}
 				fields="name,email,picture"
 				onClick={componentClicked}
 				callback={responseFacebook}
