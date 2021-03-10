@@ -10,7 +10,7 @@ export default function Home() {
 		console.log(response);
 	};
 
-	handleTrueCallerLogin = () => {
+	const handleTrueCallerLogin = () => {
 		let req_nonce = 123456789598; // random number of length 8 to 64 characters
 		window.location = `truecallersdk://truesdk/web_verify?
                                requestNonce=${req_nonce}
