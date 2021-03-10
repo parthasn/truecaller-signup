@@ -3,6 +3,9 @@ import styles from '../styles/Home.module.css';
 import FacebookLogin from 'react-facebook-login';
 
 export default function Home() {
+	const componentClicked = () => {
+		console.log('clicked');
+	};
 	const responseFacebook = (response) => {
 		console.log(response);
 	};
