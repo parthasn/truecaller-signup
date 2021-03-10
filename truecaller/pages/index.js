@@ -11,10 +11,10 @@ export default function Home() {
 	};
 
 	const handleTrueCallerLogin = () => {
-		let req_nonce = 123456789598; // random number of length 8 to 64 characters
+		let req_nonce = 4545523512345346464; // random number of length 8 to 64 characters
 		window.location = `truecallersdk://truesdk/web_verify?
                                requestNonce=${req_nonce}
-                               &partnerKey="PJjRSed597cd5a30644b0a9cbf2e7793b1dce"
+                               &partnerKey="iJs0J90af38dc002843dcbcc6ad1e2112f0b9"
                                &partnerName="truecaller-demo"
                                &lang="en"
 							   &loginSuffix="login"
