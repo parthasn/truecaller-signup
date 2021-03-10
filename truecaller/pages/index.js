@@ -9,23 +9,14 @@ export default function Home() {
 
 	return (
 		<div className={styles.container}>
-			<Head>
-				<title>Create Next App</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
-			<Main>
-				<div>
-					<h1>Facebook Login</h1>
-					<FacebookLogin
-						appId="1088597931155576"
-						autoLoad={true}
-						fields="name,email,picture"
-						onClick={componentClicked}
-						callback={responseFacebook}
-					/>
-				</div>
-			</Main>
+			<h1>Facebook Login</h1>
+			<FacebookLogin
+				appId="1088597931155576"
+				autoLoad={true}
+				fields="name,email,picture"
+				onClick={componentClicked}
+				callback={responseFacebook}
+			/>
 		</div>
 	);
 }
