@@ -12,12 +12,18 @@ export default function Home() {
 
 	const handleTrueCallerLogin = () => {
 		let req_nonce = 4545523512345346464; // random number of length 8 to 64 characters
-		window.location = `truecallersdk://truesdk/web_verify?
-                               requestNonce=${req_nonce}
-                               &partnerKey=iJs0J90af38dc002843dcbcc6ad1e2112f0b9
-                               &partnerName=truecaller-demo
-                               &lang=en
-							   &loginSuffix=login`;
+		window.location = `truecallersdk://truesdk/web_verify?type=btmsheet
+                            &requestNonce=${req_nonce}
+                            &partnerKey=XgAXE272ea2ab2b354dfaac68447ee57a51f6
+                            &partnerName=truecaller2
+                            &lang=en   
+                            &loginPrefix=continue
+                            &loginSuffix=login
+                            &ctaPrefix=continuewith
+                            &ctaColor=%23f75d34
+                            &ctaTextColor=%23f75d34
+                            &btnShape=rect
+                            &skipOption=skip`;
 
 		setTimeout(function() {
 			if (document.hasFocus()) {
